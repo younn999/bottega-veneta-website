@@ -1,0 +1,67 @@
+/* 버튼 */
+.btn {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(129, 129, 129);
+  border-color: rgb(129, 129, 129);
+}
+
+.btn:active {
+  background-color: rgb(129, 129, 129) !important;
+  border-color: rgb(129, 129, 129) !important;
+}
+
+/* 카드 */
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+/* 하단 */
+footer {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+}
+
+.first-line {
+  border-bottom: 1px solid #392d23;
+}
+
+.second-line a {
+  color: white;
+  text-decoration: none;
+}
+
+/* 화면이 줄어들었을 때 나오는 부분 */
+.mobile-footer {
+  border-top: 1px solid #392d23;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 300;
+  display: none;
+}
+
+@media screen and (max-width: 48rem) {
+  div[class="card"] {
+    margin-bottom: 1rem;
+  }
+  .first-line {
+    text-align: center;
+  }
+  .second-line {
+    padding: 0 2rem;
+  }
+  .flag {
+    display: none;
+  }
+  .mobile-footer {
+    display: block;
+  }
+}
